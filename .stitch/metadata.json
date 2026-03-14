@@ -1,0 +1,75 @@
+{
+  "name": "projects/744843803997450656",
+  "projectId": "744843803997450656",
+  "title": "FoundIt AI Smart Lost & Found",
+  "visibility": "PRIVATE",
+  "projectType": "PROJECT_DESIGN",
+  "origin": "STITCH",
+  "deviceType": "DESKTOP",
+  "screens": {
+    "index": {
+      "id": "0fc89e71babd40e49366b62c3c2f1708",
+      "sourceScreen": "projects/744843803997450656/screens/0fc89e71babd40e49366b62c3c2f1708",
+      "x": 0,
+      "y": 0,
+      "width": 2560,
+      "height": 3554
+    },
+    "dashboard": {
+      "id": "817e8eaa3f464c44b7740c8fec5f8fcd",
+      "sourceScreen": "projects/744843803997450656/screens/817e8eaa3f464c44b7740c8fec5f8fcd",
+      "x": 2600,
+      "y": 0,
+      "width": 2560,
+      "height": 2048
+    },
+    "report-lost": {
+      "id": "1ae83797e91a4c18b687fd1d16435631",
+      "sourceScreen": "projects/744843803997450656/screens/1ae83797e91a4c18b687fd1d16435631",
+      "x": 5200,
+      "y": 0,
+      "width": 2560,
+      "height": 2292
+    },
+    "upload-found": {
+      "id": "4397e78a8970444eb1720d8499fc251b",
+      "sourceScreen": "projects/744843803997450656/screens/4397e78a8970444eb1720d8499fc251b",
+      "x": 7800,
+      "y": 0,
+      "width": 2560,
+      "height": 2686
+    },
+    "matches": {
+      "id": "7c218478842f4e5b80a204bfb8410c4a",
+      "sourceScreen": "projects/744843803997450656/screens/7c218478842f4e5b80a204bfb8410c4a",
+      "x": 10400,
+      "y": 0,
+      "width": 2560,
+      "height": 2048
+    },
+    "admin": {
+      "id": "0bdbcfc19dcb428aaa0ba6bbdf6b227a",
+      "sourceScreen": "projects/744843803997450656/screens/0bdbcfc19dcb428aaa0ba6bbdf6b227a",
+      "x": 13000,
+      "y": 0,
+      "width": 2560,
+      "height": 2048
+    },
+    "analytics": {
+      "id": "bddfeab8ddf64ad993312f43adf0b66b",
+      "sourceScreen": "projects/744843803997450656/screens/bddfeab8ddf64ad993312f43adf0b66b",
+      "x": 15600,
+      "y": 0,
+      "width": 2560,
+      "height": 2048
+    },
+    "qr-scan": {
+      "id": "46cebea9fa3e49248ee7999df500b7ad",
+      "sourceScreen": "projects/744843803997450656/screens/46cebea9fa3e49248ee7999df500b7ad",
+      "x": 0,
+      "y": 4000,
+      "width": 780,
+      "height": 1768
+    }
+  }
+}

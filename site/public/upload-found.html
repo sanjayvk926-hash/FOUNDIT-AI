@@ -1,0 +1,180 @@
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FoundIt AI - Upload Found Item</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5048e5",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121121",
+                        "slate-custom": "#1F2937",
+                        "pearl": "#F9FAFB",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-nav {
+            background-color: #5048e5;
+            color: white !important;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="flex min-h-screen">
+<!-- Sidebar -->
+<aside class="fixed inset-y-0 left-0 w-64 bg-white dark:bg-slate-900 border-r border-primary/10 flex flex-col z-20">
+<div class="p-6">
+<div class="flex items-center gap-2 mb-8">
+<div class="w-8 h-8 bg-primary rounded flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm">search_insights</span>
+</div>
+<div>
+<h1 class="text-lg font-bold text-slate-custom dark:text-white leading-none">FoundIt AI</h1>
+<p class="text-xs text-primary font-medium">Smart Campus Lost &amp; Found</p>
+</div>
+</div>
+<nav class="space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:bg-primary/5 rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-sm font-medium">Dashboard</span>
+</a>
+<a class="active-nav flex items-center gap-3 px-4 py-3 rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">add_box</span>
+<span class="text-sm font-medium">Upload Found</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:bg-primary/5 rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="text-sm font-medium">Lost Items</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:bg-primary/5 rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="text-sm font-medium">My Reports</span>
+</a>
+<div class="pt-4 mt-4 border-t border-primary/10">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:bg-primary/5 rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-sm font-medium">Settings</span>
+</a>
+</div>
+</nav>
+</div>
+<div class="mt-auto p-6">
+<div class="bg-primary/5 p-4 rounded-xl">
+<p class="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Need Help?</p>
+<p class="text-xs text-slate-500 dark:text-slate-400 mb-3">Contact campus security for immediate assistance.</p>
+<button class="w-full py-2 bg-white dark:bg-slate-800 border border-primary/20 text-primary text-xs font-bold rounded-lg shadow-sm hover:bg-primary/10 transition-colors">
+                        Call Security
+                    </button>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="ml-64 flex-1 p-8 lg:p-12 max-w-6xl mx-auto">
+<!-- Header Section -->
+<header class="mb-10">
+<h2 class="text-4xl font-black text-slate-custom dark:text-white tracking-tight mb-2">I Found Something</h2>
+<p class="text-slate-500 dark:text-slate-400 text-lg max-w-2xl">Upload a clear photo. Our AI will automatically detect the item type and color.</p>
+</header>
+<!-- Form Container -->
+<div class="bg-white dark:bg-slate-900 rounded-xl shadow-xl shadow-primary/5 border border-primary/5 overflow-hidden">
+<!-- AI Upload Area -->
+<div class="p-8 pb-4">
+<div class="relative group cursor-pointer">
+<div class="flex flex-col items-center justify-center border-2 border-dashed border-primary/40 bg-primary/5 rounded-xl px-6 py-16 text-center hover:border-primary hover:bg-primary/[0.08] transition-all duration-300">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white mb-6 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-3xl">auto_awesome</span>
+</div>
+<h3 class="text-xl font-bold text-slate-custom dark:text-white mb-2">Drop image here to auto-fill details</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-6 max-w-sm">Our AI will automatically process the item details from your photo to save you time.</p>
+<button class="px-8 py-3 bg-primary text-white rounded-full font-bold text-sm shadow-md hover:bg-primary/90 transition-transform active:scale-95">
+                                Select Photo
+                            </button>
+</div>
+</div>
+</div>
+<form class="p-8 pt-4 space-y-8">
+<!-- Form Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- AI Fields (Read-only styled) -->
+<div class="space-y-2">
+<label class="block text-sm font-bold text-slate-custom dark:text-slate-300">AI-Detected Item Type</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary/60 text-xl">category</span>
+<input class="w-full pl-12 pr-4 py-4 bg-slate-50 dark:bg-slate-800 border-none rounded-xl text-slate-400 dark:text-slate-500 italic focus:ring-0 cursor-not-allowed" placeholder="Processing..." readonly="" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-bold text-slate-custom dark:text-slate-300">AI-Detected Color</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary/60 text-xl">palette</span>
+<input class="w-full pl-12 pr-4 py-4 bg-slate-50 dark:bg-slate-800 border-none rounded-xl text-slate-400 dark:text-slate-500 italic focus:ring-0 cursor-not-allowed" placeholder="Processing..." readonly="" type="text"/>
+</div>
+</div>
+<!-- Manual Fields -->
+<div class="space-y-2 md:col-span-2">
+<label class="block text-sm font-bold text-slate-custom dark:text-slate-300">Exact Location Found</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 text-xl">location_on</span>
+<select class="w-full pl-12 pr-4 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-custom dark:text-slate-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all appearance-none">
+<option disabled="" selected="" value="">Select location (e.g. Library, Canteen)</option>
+<option value="library">Main Library - Floor 2</option>
+<option value="canteen">Central Canteen - Dining Area</option>
+<option value="classroom_a">Classroom Block A - Room 102</option>
+<option value="gym">University Sports Complex</option>
+<option value="park">East Campus Garden</option>
+</select>
+</div>
+</div>
+<div class="space-y-2 md:col-span-2">
+<label class="block text-sm font-bold text-slate-custom dark:text-slate-300">Additional Notes</label>
+<textarea class="w-full px-4 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-custom dark:text-slate-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none" placeholder="Mention any distinguishing features or specific details about where the item was sitting..." rows="4"></textarea>
+</div>
+</div>
+<!-- Info Block -->
+<div class="bg-[#E0E7FF] dark:bg-primary/20 p-5 rounded-xl border border-primary/10 flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary">info</span>
+<p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+                            After submitting, please hand the item to the <span class="text-primary font-bold">Campus Security Desk</span> at the Main Building. This helps us verify owners securely.
+                        </p>
+</div>
+<!-- Action Bar -->
+<div class="flex items-center justify-end gap-4 pt-6 border-t border-slate-100 dark:border-slate-800">
+<button class="px-6 py-3 text-sm font-bold text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition-colors" type="button">
+                            Cancel
+                        </button>
+<button class="px-10 py-3 bg-primary text-white rounded-full font-bold text-sm shadow-lg shadow-primary/20 hover:shadow-primary/30 hover:bg-primary/90 transition-all flex items-center gap-2" type="submit">
+<span>Submit Found Item</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Footer Meta -->
+<footer class="mt-8 text-center text-slate-400 dark:text-slate-600 text-xs">
+<p>© 2024 FoundIt AI Campus Systems. All uploads are processed and logged for campus security.</p>
+</footer>
+</main>
+</div>
+</body></html>

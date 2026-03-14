@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FoundIt AI Matches &amp; Notifications</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4F46E5",
+                        "background-light": "#F9FAFB",
+                        "background-dark": "#121121",
+                        "dark-slate": "#1F2937",
+                        "emerald-green": "#10B981",
+                        "pearl-gray": "#F9FAFB",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-dark-slate dark:text-slate-100 min-h-screen">
+<div class="flex h-screen overflow-hidden">
+<!-- Sidebar Navigation -->
+<aside class="w-72 bg-white dark:bg-slate-900 border-r border-primary/10 flex flex-col p-6 h-full">
+<div class="flex items-center gap-3 mb-10 px-2">
+<div class="bg-primary size-10 rounded flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl">search_check</span>
+</div>
+<div>
+<h1 class="text-xl font-bold tracking-tight">FoundIt AI</h1>
+<p class="text-xs text-slate-500 uppercase tracking-widest font-semibold">Campus Recovery</p>
+</div>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 dark:text-slate-400 hover:bg-primary/5 transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary text-white shadow-lg shadow-primary/20" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">spark</span>
+<span class="font-medium">Matches</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 dark:text-slate-400 hover:bg-primary/5 transition-colors" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="font-medium">Report Item</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 dark:text-slate-400 hover:bg-primary/5 transition-colors" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="font-medium">Map</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 dark:text-slate-400 hover:bg-primary/5 transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-medium">Settings</span>
+</a>
+</nav>
+<div class="mt-auto p-4 bg-primary/5 rounded-xl border border-primary/10">
+<div class="flex items-center gap-3 mb-3">
+<img alt="Student profile picture" class="size-10 rounded-full" data-alt="Student profile picture with glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnVk7cKN9mw-Po3HWbm1hqGMyRMpzxG_8k7IbigC7sgwAUJIgMecwRdVQIs3VDcOmfWEf_GBLtInJJShnJ2HvN6gMPQWwvNQW7HNGc9WzAX-8mQiecRDxwNNgfcOoGgw4fRwdhvuPM49-5B8x7c1Je7cWVWalMrEqcyOVdKhf7FwFk_I_0zFJYQy2Ex6BZGVrA90Ax3TunZ1ibstDGoNluUlXILk5N6I_7LeDRGL03Tf3jYfeB3f5KC9Ft8M1W_gqsXFUnrNcKZw"/>
+<div>
+<p class="text-sm font-bold">Alex Chen</p>
+<p class="text-xs text-slate-500">Student ID: 240182</p>
+</div>
+</div>
+<button class="w-full text-xs font-bold text-primary uppercase tracking-wider">Log Out</button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto bg-pearl-gray dark:bg-background-dark">
+<!-- Header Section -->
+<header class="sticky top-0 z-10 bg-pearl-gray/80 dark:bg-background-dark/80 backdrop-blur-md px-10 py-8">
+<div class="flex flex-col gap-1">
+<h2 class="text-3xl font-black text-dark-slate dark:text-white tracking-tight">Your Matches &amp; Notifications</h2>
+<p class="text-slate-500 font-medium">Our AI analyzes visual features and metadata to find your lost items across campus.</p>
+</div>
+</header>
+<div class="px-10 pb-20 space-y-10">
+<!-- High Confidence Match Section -->
+<section>
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-lg font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">verified</span>
+                            High Confidence Match
+                        </h3>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xl shadow-xl shadow-slate-200/50 dark:shadow-none p-8">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+<!-- Left: Reported Item -->
+<div class="space-y-4">
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Your Reported Item</span>
+<div class="relative aspect-square rounded-xl overflow-hidden bg-slate-100">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Close up of premium blue over-ear headphones" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuACEk_Rp3dCNoTWR-XsUhLnFLbw7MICRQZWm0Ne5EIIV3kNJED5k6wMsl0zPC3ZVEacZv3J6bedPhjBJY_G19ZM71SVazIXLG9CfiN7e2QqaR_yfVwSQQI5Xn4vPRshibwURwTtS6gJgpKVaqROCr2kpMrjmQ4mxUrVV7U979HxYOGkFQBkrra4Ac2xRjKwyJn4OIQiA4vpEJFwSiJm7RMhDiupp61QTSC5FUZmgxD4ZwDIwiaznYLC3tC05GPlTwruTf47CsNRcA');"></div>
+</div>
+<div>
+<h4 class="font-bold text-lg">Blue Headphones</h4>
+<p class="text-sm text-slate-500">Reported: Oct 24th, 2023</p>
+</div>
+</div>
+<!-- Center: Match Meter -->
+<div class="flex flex-col items-center justify-center py-6">
+<div class="relative flex items-center justify-center">
+<!-- Simple Gauge UI with CSS Circle -->
+<div class="size-48 rounded-full border-[12px] border-slate-100 dark:border-slate-800 flex items-center justify-center">
+<div class="absolute inset-0 rounded-full border-[12px] border-emerald-green" style="clip-path: polygon(50% 50%, -50% -50%, 150% -50%, 150% 150%, 50% 50%);"></div>
+<div class="text-center z-10">
+<span class="material-symbols-outlined text-emerald-green text-3xl mb-1" style="font-variation-settings: 'FILL' 1">spark</span>
+<div class="text-4xl font-black text-dark-slate dark:text-white leading-none">98%</div>
+<div class="text-xs font-bold text-emerald-green uppercase tracking-tighter">AI Match</div>
+</div>
+</div>
+</div>
+<div class="mt-6 text-center space-y-1">
+<p class="text-sm font-medium text-slate-600 dark:text-slate-400">Features match perfectly</p>
+<div class="flex gap-1 justify-center">
+<span class="px-2 py-0.5 bg-emerald-green/10 text-emerald-green text-[10px] font-bold rounded uppercase">Color</span>
+<span class="px-2 py-0.5 bg-emerald-green/10 text-emerald-green text-[10px] font-bold rounded uppercase">Model</span>
+<span class="px-2 py-0.5 bg-emerald-green/10 text-emerald-green text-[10px] font-bold rounded uppercase">Wear</span>
+</div>
+</div>
+</div>
+<!-- Right: Found Item -->
+<div class="space-y-4">
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest text-right block">Found Item Match</span>
+<div class="relative aspect-square rounded-xl overflow-hidden bg-slate-100">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Found blue headphones on a wooden table" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDlxsu5n1hpK1NYfWlaikHAD_2GB-fYGjsp82pd25oqSOwFpMwU-DdPsrjAFtVs6Sbu_zxpOaZ7-Ld3GSIq-IDOU9NtQKnu6PBtUaZBF9_ljeT8hDljZsYuianTzmpVfzVL-tHJ5lI-1kP7bd28puldv7kzUGNG7Nz9hEsmkzyU92Jn3sy1UzhZRf6Y5BpVjOk1cxQ3QZQTZnTh04LyedoxleXEwXi9uxKTuNmg7D9s5EX8lo_a15KWMtwzdD_4n5KmRB4lio-a4A');"></div>
+</div>
+<div class="text-right">
+<h4 class="font-bold text-lg">Found Item #882</h4>
+<p class="text-sm text-primary font-semibold flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                                        Main Library - 2nd Floor
+                                    </p>
+</div>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="mt-10 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="max-w-md">
+<p class="text-sm text-slate-500 italic">"The AI detected unique wear patterns on the left ear cup that match the description provided in your report."</p>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl shadow-primary/30 transition-transform active:scale-95">
+                                Claim Item at Security
+                            </button>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+<!-- Potential Matches List -->
+<div class="lg:col-span-2 space-y-4">
+<h3 class="text-lg font-bold">Other Potential Matches</h3>
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-100 dark:border-slate-800 divide-y divide-slate-100 dark:divide-slate-800">
+<!-- Match Item 1 -->
+<div class="p-4 flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<div class="flex items-center gap-4">
+<div class="size-16 rounded-lg bg-slate-100 overflow-hidden shrink-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="Leather wallet on a flat surface" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtmfIAxMZ0HSCyPscZiy8XEvuLwGsmYbxTUDkeup6f9lHEgqrVFMVRop75bVIvN_P0lIZc3i5-9sCyCb65bVMCeHvTskTE10WVzDyyrLu2qmeNVugb8BY0coyw-u9pMr711Zs-uSJ6K2Q7cjJH8tO5Pi3fTRf1otF9ChPelpPK968ltgxvy7xfwlA8UF7AM-ED6WJqhxDea3NR6dAlU666D-pdd65WBfTaMHSABEOnEX4N8nogLaTboaHixuuMgy33cI7EorjZKQ');"></div>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h5 class="font-bold">Black Leather Wallet</h5>
+<span class="text-[10px] font-bold px-1.5 py-0.5 bg-orange-100 text-orange-600 rounded">72% MATCH</span>
+</div>
+<p class="text-sm text-slate-500">Found near Student Union • 2 hours ago</p>
+</div>
+</div>
+<button class="text-primary font-bold text-sm px-4 py-2 hover:bg-primary/5 rounded-lg transition-colors">View Details</button>
+</div>
+<!-- Match Item 2 -->
+<div class="p-4 flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<div class="flex items-center gap-4">
+<div class="size-16 rounded-lg bg-slate-100 overflow-hidden shrink-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="Stainless steel water bottle" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkOXHSI9tfplMGUrfIpuEsvEnwIIAY-uuHPQ_FjHVCcMutLTXbiQ6Y5Qe_sIf9ngfZVckRQt2g9qqu3NxOaKtqWIR8z0d1vG36ogpOkb8tV_tAycztbIou_XBeZnelTKiDJKRIOCZ_FC2ZTBcDzJMSxuaSI9-mnlbG7nI0w66ymnHgPASu0EC8tiOxLi1__rGkBSb3-qS6jxmD_a5o61kE4cR0DEKSBnddwX6-IV3O5Mb5gKqSXAnFyM468_IRIWiMlmWo6ick_A');"></div>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h5 class="font-bold">HydroFlask Bottle</h5>
+<span class="text-[10px] font-bold px-1.5 py-0.5 bg-slate-200 text-slate-600 rounded">45% MATCH</span>
+</div>
+<p class="text-sm text-slate-500">Found in Science Hall • Oct 28th</p>
+</div>
+</div>
+<button class="text-primary font-bold text-sm px-4 py-2 hover:bg-primary/5 rounded-lg transition-colors">View Details</button>
+</div>
+<!-- System Notification -->
+<div class="p-4 bg-slate-50/50 dark:bg-slate-800/30 flex items-center gap-4">
+<div class="size-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-500">
+<span class="material-symbols-outlined text-xl">update</span>
+</div>
+<div>
+<p class="text-sm font-medium">Item <span class="font-bold text-dark-slate dark:text-white">#452 (Gray Umbrella)</span> marked as returned to owner.</p>
+<p class="text-xs text-slate-400">Oct 29th • 09:45 AM</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Collection Instructions -->
+<div class="space-y-4">
+<h3 class="text-lg font-bold">How to Collect</h3>
+<div class="bg-slate-100 dark:bg-slate-800/50 rounded-xl p-6 border border-slate-200 dark:border-slate-700">
+<div class="flex items-start gap-3 mb-6">
+<span class="material-symbols-outlined text-primary mt-1">info</span>
+<p class="text-sm font-medium leading-relaxed">To claim high-confidence matches, please visit the campus security desk at the Administration Building.</p>
+</div>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<div class="size-8 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-primary font-bold text-sm shadow-sm">1</div>
+<span class="text-xs font-semibold uppercase tracking-wider">Bring Student ID</span>
+</li>
+<li class="flex items-center gap-3">
+<div class="size-8 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-primary font-bold text-sm shadow-sm">2</div>
+<span class="text-xs font-semibold uppercase tracking-wider">Provide Reference #882</span>
+</li>
+<li class="flex items-center gap-3">
+<div class="size-8 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-primary font-bold text-sm shadow-sm">3</div>
+<span class="text-xs font-semibold uppercase tracking-wider">Sign Recovery Receipt</span>
+</li>
+</ul>
+<div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-700">
+<div class="flex items-center justify-between text-xs font-bold text-slate-500 mb-2 uppercase">
+<span>Security Hours</span>
+<span class="text-emerald-green">Open Now</span>
+</div>
+<p class="text-sm font-medium">Mon - Fri: 08:00 AM - 10:00 PM</p>
+<p class="text-sm font-medium">Sat - Sun: 10:00 AM - 06:00 PM</p>
+</div>
+</div>
+<div class="bg-primary/10 border border-primary/20 rounded-xl p-4 text-center">
+<p class="text-xs font-bold text-primary uppercase mb-2">Need Help?</p>
+<button class="text-primary font-bold hover:underline">Contact Support</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

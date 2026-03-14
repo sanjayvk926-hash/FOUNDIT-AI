@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FoundIt AI QR Scanner</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5048e5",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121121",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-hidden">
+<div class="relative flex h-screen w-full flex-col overflow-hidden max-w-md mx-auto shadow-2xl bg-black">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-slate-900 flex items-center justify-center">
+<img alt="Campus background view" class="w-full h-full object-cover opacity-60" data-alt="Blurred campus hallway or classroom background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaf2ywAylc7G-heyFvh8uI9CROn383CZLfODA2q45fyHHtxa0TDAu-O2w4ceJm3Nx6s8W_FH9fIxHxnaIot_wsaogE8bQBD9idaodVvAC8k_xv5imajG5KIXOKblkZtYIJpqIq1GLlaOenLXLvt_CvTroBdLSQY2zZi9YruLdYRJbZdE5LqnyhItUQdkYxbOMncJC0-VR4O89I9_9zA94AKZNmNY-AJODTSBj5mcz1FPlooyEqTNzlVWdzKa1m_2nhPRlivVVTjA"/>
+</div>
+</div>
+<div class="absolute inset-0 z-10 flex flex-col items-center">
+<div class="w-full bg-gradient-to-b from-black/60 to-transparent pt-12 pb-6 px-6">
+<div class="flex items-center justify-between mb-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-black/20 text-white backdrop-blur-md">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h1 class="text-white font-bold text-lg">FoundIt AI</h1>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-black/20 text-white backdrop-blur-md">
+<span class="material-symbols-outlined">flash_on</span>
+</button>
+</div>
+<p class="text-white text-center text-sm font-medium drop-shadow-md">Point your camera at a FoundIt AI QR code</p>
+</div>
+<div class="flex-1 flex items-center justify-center w-full px-10">
+<div class="relative w-full aspect-square max-w-[280px] border-2 border-white/30 rounded-xl overflow-hidden shadow-[0_0_0_100vmax_rgba(0,0,0,0.5)]">
+<div class="absolute top-0 left-0 w-full h-0.5 bg-primary shadow-[0_0_15px_2px_rgba(80,72,229,0.8)] translate-y-20"></div>
+<div class="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-primary rounded-tl-lg"></div>
+<div class="absolute top-0 right-0 w-8 h-8 border-t-4 border-r-4 border-primary rounded-tr-lg"></div>
+<div class="absolute bottom-0 left-0 w-8 h-8 border-b-4 border-l-4 border-primary rounded-bl-lg"></div>
+<div class="absolute bottom-0 right-0 w-8 h-8 border-b-4 border-r-4 border-primary rounded-br-lg"></div>
+</div>
+</div>
+<div class="w-full bg-white dark:bg-slate-900 rounded-t-xl p-6 pb-8 shadow-[0_-10px_25px_-5px_rgba(0,0,0,0.1)] z-20">
+<div class="flex justify-center mb-6">
+<div class="w-12 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full"></div>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-4 rounded-full shadow-lg shadow-primary/25 transition-colors mb-4 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+                    Report Found Item
+                </button>
+<button class="w-full text-slate-500 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors mb-8">
+                    Enter code manually
+                </button>
+<div>
+<h3 class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-4">Recent Reports</h3>
+<div class="flex gap-4">
+<div class="flex flex-col items-center gap-2">
+<div class="w-14 h-14 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">vpn_key</span>
+</div>
+<span class="text-[11px] font-medium text-slate-600 dark:text-slate-300">Keys</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-14 h-14 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">badge</span>
+</div>
+<span class="text-[11px] font-medium text-slate-600 dark:text-slate-300">ID Card</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-14 h-14 rounded-full bg-primary/5 border border-dashed border-slate-300 dark:border-slate-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-400">history</span>
+</div>
+<span class="text-[11px] font-medium text-slate-400">History</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-auto bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 z-30">
+<div class="flex gap-2 px-4 pb-6 pt-2">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-primary" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined fill-1">qr_code_scanner</span>
+</div>
+<p class="text-xs font-semibold leading-normal tracking-[0.015em]">Scan</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">history</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">History</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Profile</p>
+</a>
+</div>
+</div>
+</div>
+</body></html>
