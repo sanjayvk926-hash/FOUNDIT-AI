@@ -10,8 +10,17 @@ permissions:
   pages: write
   id-token: write
 
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -32,7 +41,7 @@ jobs:
         run: npm run build
         working-directory: frontend
         env:
-          VITE_API_URL: https://foundit-api.yourdomain.com/api # Placeholder for future production API
+          VITE_API_URL: https://foundit-api.yourdomain.com/api
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -40,8 +49,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # This should be the full path to the dist folder relative to the repo root
-          path: './frontend/dist'
+          # This must be the directory containing the index.html from the build
+          path: 'frontend/dist/'
 
       - name: Deploy to GitHub Pages
         id: deployment
