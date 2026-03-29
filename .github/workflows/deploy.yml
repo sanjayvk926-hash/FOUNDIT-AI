@@ -25,7 +25,7 @@ jobs:
           cache-dependency-path: frontend/package-lock.json
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
         working-directory: frontend
 
       - name: Build
@@ -40,7 +40,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'frontend/dist'
+          # This should be the full path to the dist folder relative to the repo root
+          path: './frontend/dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
