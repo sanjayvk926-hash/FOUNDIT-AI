@@ -1,0 +1,40 @@
+# Base image for Python with ML support
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies for OpenCV
+RUN apt-get update && apt-get install -y \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements if they exist, otherwise install directly
+# Based on ai_service.py comments
+RUN pip install --no-cache-dir \
+    flask \
+    flask-cors \
+    opencv-python-headless \
+    ultralytics \
+    numpy \
+    pillow \
+    requests
+
+# Copy service code and model
+COPY ai_service.py .
+COPY yolov8n.pt .
+
+# Expose port
+EXPOSE 5000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --retries=3 \
+  CMD curl -f http://localhost:5000/health || exit 1
+
+# Run the service
+CMD ["python", "ai_service.py"]

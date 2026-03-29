@@ -1,0 +1,41 @@
+# Maven artifacts
+**/target/
+**/build/
+**/bin/
+
+# Java / IDE
+*.class
+*.db
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# Maven Distribution (Specific to this project)
+backend/foundit-backend-spring/maven/
+backend/foundit-backend-spring/maven_new/
+backend/foundit-backend-spring/maven_unzipped/
+backend/foundit-backend-spring/maven.zip
+backend/foundit-backend-spring/apache-maven-*/
+
+# Node.js
+**/node_modules/
+**/dist/
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Application-specific
+backend/foundit-backend-spring/uploads/*
+!backend/foundit-backend-spring/uploads/.gitkeep
+backend/foundit-backend-spring/data/
+**/build.log
+**/server.log
+**/*.backup
+**/*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,21 +1,43 @@
 import React from 'react';
-import { Search, MapPin, Calendar, Clock, ArrowRight } from 'lucide-react';
-import { lostItems, statistics } from '../data/mockData';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import Sidebar from '../components/Sidebar';
+import { 
+  PlusCircle, 
+  Search, 
+  CheckCircle2, 
+  Clock, 
+  MapPin, 
+  Calendar,
+  ChevronRight,
+  TrendingUp,
+  Package,
+  Bell,
+  ArrowRight
+} from 'lucide-react';
+import { lostItems, statistics } from '../data/mockData';
 
 const Dashboard: React.FC = () => {
+  const navigate = useNavigate();
+  const { user } = useAuth();
+
   return (
     <div className="flex bg-slate-50 min-h-[calc(100vh-73px)]">
       <Sidebar />
       <main className="flex-1 p-6 md:p-10 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
           <div className="space-y-1">
-            <h1 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">Welcome, Sanjay</h1>
+            <h1 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+              Welcome back, {user ? user.username : 'Student'}! 👋
+            </h1>
             <p className="text-slate-500 font-medium">Here's what's happening with your items today.</p>
           </div>
           <div className="flex gap-3">
-            <button className="flex-1 md:flex-none h-12 px-6 bg-primary text-white rounded-full font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all flex items-center justify-center gap-2">
-              <Search size={18} />
+            <button 
+              onClick={() => navigate('/reports')}
+              className="flex-1 md:flex-none h-12 px-6 bg-primary text-white rounded-full font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all flex items-center justify-center gap-2"
+            >
+              <PlusCircle size={18} />
               <span>New Report</span>
             </button>
           </div>
@@ -39,7 +61,7 @@ const Dashboard: React.FC = () => {
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center justify-between">
               <h2 className="text-xl font-bold text-slate-900">Your Recent Reports</h2>
-              <button className="text-primary font-bold text-sm hover:underline">View All</button>
+              <button onClick={() => navigate('/dashboard')} className="text-primary font-bold text-sm hover:underline">View All</button>
             </div>
             
             <div className="grid grid-cols-1 gap-4">
@@ -71,7 +93,7 @@ const Dashboard: React.FC = () => {
                     </div>
                     <div className="mt-4 flex gap-3">
                       <button className="flex-1 bg-slate-50 rounded-lg h-10 text-xs font-bold text-slate-600 hover:bg-slate-100 transition-colors">Details</button>
-                      <button className="flex-2 bg-primary/10 rounded-lg h-10 text-xs font-bold text-primary hover:bg-primary/20 transition-colors">Track AI Matches</button>
+                      <button onClick={() => navigate('/matches')} className="flex-2 bg-primary/10 rounded-lg h-10 text-xs font-bold text-primary hover:bg-primary/20 transition-colors">Track AI Matches</button>
                     </div>
                   </div>
                 </div>
@@ -104,7 +126,12 @@ const Dashboard: React.FC = () => {
               <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16 group-hover:scale-110 transition-transform"></div>
               <h3 className="text-lg font-bold relative z-10">Secure Your Belongings</h3>
               <p className="text-xs text-white/80 font-medium leading-relaxed relative z-10">Generate unique QR stickers for your laptop, bottle, or keys to make returning easier.</p>
-              <button className="bg-white text-primary rounded-xl h-10 text-xs font-black shadow-lg shadow-black/5 relative z-10">Get QR Codes</button>
+              <button 
+                onClick={() => navigate('/faq')}
+                className="bg-white text-primary rounded-xl h-10 text-xs font-black shadow-lg shadow-black/5 relative z-10"
+              >
+                Get QR Codes
+              </button>
             </div>
           </div>
         </div>

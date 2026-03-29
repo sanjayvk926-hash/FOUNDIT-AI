@@ -1,0 +1,641 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.foundit:foundit-backend >---------------------
+[INFO] Building FoundIt AI Backend 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ foundit-backend ---
+[INFO] Deleting C:\Users\Sanjay\OneDrive\Documents\FOUNDIT AI\backend\foundit-backend-spring\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ foundit-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ foundit-backend ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 50 source files with javac [debug release 17] to target\classes
+[INFO] Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[90,17] cannot find symbol
+  symbol:   method setId(java.lang.Long)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[91,17] cannot find symbol
+  symbol:   method setItemName(java.lang.String)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[92,17] cannot find symbol
+  symbol:   method setDescription(java.lang.String)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[93,17] cannot find symbol
+  symbol:   method setCategory(java.lang.String)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[94,17] cannot find symbol
+  symbol:   method setColor(java.lang.String)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[95,17] cannot find symbol
+  symbol:   method setBrand(java.lang.String)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[96,17] cannot find symbol
+  symbol:   method setLastSeenLocationName(item.getLa[...] null)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[97,68] cannot find symbol
+  symbol:   method getName()
+  location: class com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[98,17] cannot find symbol
+  symbol:   method setLastSeenTime(java.time.LocalDateTime)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[99,17] cannot find symbol
+  symbol:   method setOwnerName(java.lang.String)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[100,17] cannot find symbol
+  symbol:   method setOwnerEmail(java.lang.String)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[101,17] cannot find symbol
+  symbol:   method setImageUrl(java.lang.String)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[102,17] cannot find symbol
+  symbol:   method setStatus(java.lang.String)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[103,17] cannot find symbol
+  symbol:   method setReferenceId(java.lang.String)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[104,17] cannot find symbol
+  symbol:   method setReportedAt(java.time.LocalDateTime)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[45,63] cannot find symbol
+  symbol:   method getName()
+  location: class com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[46,52] cannot find symbol
+  symbol:   method getName()
+  location: class com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[50,63] cannot find symbol
+  symbol:   method getName()
+  location: class com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[55,21] cannot find symbol
+  symbol:   method setUser(com.foundit.model.User)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[56,21] cannot find symbol
+  symbol:   method setTitle(java.lang.String)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[57,21] cannot find symbol
+  symbol:   method setMessage(java.lang.String)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[58,21] cannot find symbol
+  symbol:   method setType(com.foundit.model.Notification.NotificationType)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[59,21] cannot find symbol
+  symbol:   method setRelatedMatch(com.foundit.model.ItemMatch)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[60,21] cannot find symbol
+  symbol:   method setIsRead(boolean)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[87,21] cannot find symbol
+  symbol:   method setUser(com.foundit.model.User)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[88,21] cannot find symbol
+  symbol:   method setTitle(java.lang.String)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[89,21] cannot find symbol
+  symbol:   method setMessage(java.lang.String)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[90,21] cannot find symbol
+  symbol:   method setType(com.foundit.model.Notification.NotificationType)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[91,21] cannot find symbol
+  symbol:   method setIsRead(boolean)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[113,21] cannot find symbol
+  symbol:   method setUser(com.foundit.model.User)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[114,21] cannot find symbol
+  symbol:   method setTitle(java.lang.String)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[115,21] cannot find symbol
+  symbol:   method setMessage(java.lang.String)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[116,21] cannot find symbol
+  symbol:   method setType(com.foundit.model.Notification.NotificationType)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[117,21] cannot find symbol
+  symbol:   method setIsRead(boolean)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[156,21] cannot find symbol
+  symbol:   method setIsRead(boolean)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[157,21] cannot find symbol
+  symbol:   method setReadAt(java.time.LocalDateTime)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[165,25] cannot find symbol
+  symbol:   method setIsRead(boolean)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[166,25] cannot find symbol
+  symbol:   method setReadAt(java.time.LocalDateTime)
+  location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[47,17] incompatible types: bad return type in lambda expression
+    inference variable T has incompatible bounds
+      equality constraints: com.foundit.model.Location
+      lower bounds: java.util.Map<java.lang.String,java.lang.String>
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[90,53] cannot find symbol
+  symbol:   method getName()
+  location: variable locationDetails of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[91,60] cannot find symbol
+  symbol:   method getDescription()
+  location: variable locationDetails of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[92,53] cannot find symbol
+  symbol:   method getType()
+  location: variable locationDetails of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[93,57] cannot find symbol
+  symbol:   method getBuilding()
+  location: variable locationDetails of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[94,54] cannot find symbol
+  symbol:   method getFloor()
+  location: variable locationDetails of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[95,55] cannot find symbol
+  symbol:   method getActive()
+  location: variable locationDetails of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[100,17] incompatible types: bad return type in lambda expression
+    inference variable T has incompatible bounds
+      equality constraints: com.foundit.model.Location
+      lower bounds: java.util.Map<java.lang.String,java.lang.String>
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[42,16] cannot find symbol
+  symbol:   method setName(java.lang.String)
+  location: variable library of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[43,16] cannot find symbol
+  symbol:   method setDescription(java.lang.String)
+  location: variable library of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[44,16] cannot find symbol
+  symbol:   method setType(com.foundit.model.Location.LocationType)
+  location: variable library of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[45,16] cannot find symbol
+  symbol:   method setBuilding(java.lang.String)
+  location: variable library of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[46,16] cannot find symbol
+  symbol:   method setFloor(java.lang.String)
+  location: variable library of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[47,16] cannot find symbol
+  symbol:   method setActive(boolean)
+  location: variable library of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[52,16] cannot find symbol
+  symbol:   method setName(java.lang.String)
+  location: variable canteen of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[53,16] cannot find symbol
+  symbol:   method setDescription(java.lang.String)
+  location: variable canteen of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[54,16] cannot find symbol
+  symbol:   method setType(com.foundit.model.Location.LocationType)
+  location: variable canteen of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[55,16] cannot find symbol
+  symbol:   method setBuilding(java.lang.String)
+  location: variable canteen of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[56,16] cannot find symbol
+  symbol:   method setFloor(java.lang.String)
+  location: variable canteen of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[57,16] cannot find symbol
+  symbol:   method setActive(boolean)
+  location: variable canteen of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[62,18] cannot find symbol
+  symbol:   method setName(java.lang.String)
+  location: variable classroom of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[63,18] cannot find symbol
+  symbol:   method setDescription(java.lang.String)
+  location: variable classroom of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[64,18] cannot find symbol
+  symbol:   method setType(com.foundit.model.Location.LocationType)
+  location: variable classroom of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[65,18] cannot find symbol
+  symbol:   method setBuilding(java.lang.String)
+  location: variable classroom of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[66,18] cannot find symbol
+  symbol:   method setFloor(java.lang.String)
+  location: variable classroom of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[67,18] cannot find symbol
+  symbol:   method setActive(boolean)
+  location: variable classroom of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[72,16] cannot find symbol
+  symbol:   method setName(java.lang.String)
+  location: variable parking of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[73,16] cannot find symbol
+  symbol:   method setDescription(java.lang.String)
+  location: variable parking of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[74,16] cannot find symbol
+  symbol:   method setType(com.foundit.model.Location.LocationType)
+  location: variable parking of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[75,16] cannot find symbol
+  symbol:   method setBuilding(java.lang.String)
+  location: variable parking of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[76,16] cannot find symbol
+  symbol:   method setFloor(java.lang.String)
+  location: variable parking of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[77,16] cannot find symbol
+  symbol:   method setActive(boolean)
+  location: variable parking of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[82,12] cannot find symbol
+  symbol:   method setName(java.lang.String)
+  location: variable lab of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[83,12] cannot find symbol
+  symbol:   method setDescription(java.lang.String)
+  location: variable lab of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[84,12] cannot find symbol
+  symbol:   method setType(com.foundit.model.Location.LocationType)
+  location: variable lab of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[85,12] cannot find symbol
+  symbol:   method setBuilding(java.lang.String)
+  location: variable lab of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[86,12] cannot find symbol
+  symbol:   method setFloor(java.lang.String)
+  location: variable lab of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[87,12] cannot find symbol
+  symbol:   method setActive(boolean)
+  location: variable lab of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[92,15] cannot find symbol
+  symbol:   method setName(java.lang.String)
+  location: variable sports of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[93,15] cannot find symbol
+  symbol:   method setDescription(java.lang.String)
+  location: variable sports of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[94,15] cannot find symbol
+  symbol:   method setType(com.foundit.model.Location.LocationType)
+  location: variable sports of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[95,15] cannot find symbol
+  symbol:   method setBuilding(java.lang.String)
+  location: variable sports of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[96,15] cannot find symbol
+  symbol:   method setFloor(java.lang.String)
+  location: variable sports of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[97,15] cannot find symbol
+  symbol:   method setActive(boolean)
+  location: variable sports of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[102,15] cannot find symbol
+  symbol:   method setName(java.lang.String)
+  location: variable hostel of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[103,15] cannot find symbol
+  symbol:   method setDescription(java.lang.String)
+  location: variable hostel of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[104,15] cannot find symbol
+  symbol:   method setType(com.foundit.model.Location.LocationType)
+  location: variable hostel of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[105,15] cannot find symbol
+  symbol:   method setBuilding(java.lang.String)
+  location: variable hostel of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[106,15] cannot find symbol
+  symbol:   method setFloor(java.lang.String)
+  location: variable hostel of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[107,15] cannot find symbol
+  symbol:   method setActive(boolean)
+  location: variable hostel of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[112,21] cannot find symbol
+  symbol:   method setName(java.lang.String)
+  location: variable securityDesk of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[113,21] cannot find symbol
+  symbol:   method setDescription(java.lang.String)
+  location: variable securityDesk of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[114,21] cannot find symbol
+  symbol:   method setType(com.foundit.model.Location.LocationType)
+  location: variable securityDesk of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[115,21] cannot find symbol
+  symbol:   method setBuilding(java.lang.String)
+  location: variable securityDesk of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[116,21] cannot find symbol
+  symbol:   method setFloor(java.lang.String)
+  location: variable securityDesk of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[117,21] cannot find symbol
+  symbol:   method setActive(boolean)
+  location: variable securityDesk of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/FoundItemService.java:[36,64] cannot find symbol
+  symbol:   method getFoundLocationId()
+  location: variable request of type com.foundit.dto.FoundItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/FoundItemService.java:[40,38] cannot find symbol
+  symbol:   method getItemName()
+  location: variable request of type com.foundit.dto.FoundItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/FoundItemService.java:[41,41] cannot find symbol
+  symbol:   method getDescription()
+  location: variable request of type com.foundit.dto.FoundItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/FoundItemService.java:[42,38] cannot find symbol
+  symbol:   method getImageUrl()
+  location: variable request of type com.foundit.dto.FoundItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/FoundItemService.java:[123,17] cannot find symbol
+  symbol:   method setId(java.lang.Long)
+  location: variable response of type com.foundit.dto.FoundItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/FoundItemService.java:[124,17] cannot find symbol
+  symbol:   method setItemName(java.lang.String)
+  location: variable response of type com.foundit.dto.FoundItemResponse
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.744 s
+[INFO] Finished at: 2026-03-18T16:47:18+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project foundit-backend: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[90,17] cannot find symbol
+[ERROR]   symbol:   method setId(java.lang.Long)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[91,17] cannot find symbol
+[ERROR]   symbol:   method setItemName(java.lang.String)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[92,17] cannot find symbol
+[ERROR]   symbol:   method setDescription(java.lang.String)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[93,17] cannot find symbol
+[ERROR]   symbol:   method setCategory(java.lang.String)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[94,17] cannot find symbol
+[ERROR]   symbol:   method setColor(java.lang.String)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[95,17] cannot find symbol
+[ERROR]   symbol:   method setBrand(java.lang.String)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[96,17] cannot find symbol
+[ERROR]   symbol:   method setLastSeenLocationName(item.getLa[...] null)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[97,68] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: class com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[98,17] cannot find symbol
+[ERROR]   symbol:   method setLastSeenTime(java.time.LocalDateTime)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[99,17] cannot find symbol
+[ERROR]   symbol:   method setOwnerName(java.lang.String)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[100,17] cannot find symbol
+[ERROR]   symbol:   method setOwnerEmail(java.lang.String)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[101,17] cannot find symbol
+[ERROR]   symbol:   method setImageUrl(java.lang.String)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[102,17] cannot find symbol
+[ERROR]   symbol:   method setStatus(java.lang.String)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[103,17] cannot find symbol
+[ERROR]   symbol:   method setReferenceId(java.lang.String)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[104,17] cannot find symbol
+[ERROR]   symbol:   method setReportedAt(java.time.LocalDateTime)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[45,63] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: class com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[46,52] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: class com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[50,63] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: class com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[55,21] cannot find symbol
+[ERROR]   symbol:   method setUser(com.foundit.model.User)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[56,21] cannot find symbol
+[ERROR]   symbol:   method setTitle(java.lang.String)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[57,21] cannot find symbol
+[ERROR]   symbol:   method setMessage(java.lang.String)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[58,21] cannot find symbol
+[ERROR]   symbol:   method setType(com.foundit.model.Notification.NotificationType)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[59,21] cannot find symbol
+[ERROR]   symbol:   method setRelatedMatch(com.foundit.model.ItemMatch)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[60,21] cannot find symbol
+[ERROR]   symbol:   method setIsRead(boolean)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[87,21] cannot find symbol
+[ERROR]   symbol:   method setUser(com.foundit.model.User)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[88,21] cannot find symbol
+[ERROR]   symbol:   method setTitle(java.lang.String)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[89,21] cannot find symbol
+[ERROR]   symbol:   method setMessage(java.lang.String)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[90,21] cannot find symbol
+[ERROR]   symbol:   method setType(com.foundit.model.Notification.NotificationType)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[91,21] cannot find symbol
+[ERROR]   symbol:   method setIsRead(boolean)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[113,21] cannot find symbol
+[ERROR]   symbol:   method setUser(com.foundit.model.User)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[114,21] cannot find symbol
+[ERROR]   symbol:   method setTitle(java.lang.String)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[115,21] cannot find symbol
+[ERROR]   symbol:   method setMessage(java.lang.String)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[116,21] cannot find symbol
+[ERROR]   symbol:   method setType(com.foundit.model.Notification.NotificationType)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[117,21] cannot find symbol
+[ERROR]   symbol:   method setIsRead(boolean)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[156,21] cannot find symbol
+[ERROR]   symbol:   method setIsRead(boolean)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[157,21] cannot find symbol
+[ERROR]   symbol:   method setReadAt(java.time.LocalDateTime)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[165,25] cannot find symbol
+[ERROR]   symbol:   method setIsRead(boolean)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[166,25] cannot find symbol
+[ERROR]   symbol:   method setReadAt(java.time.LocalDateTime)
+[ERROR]   location: variable notification of type com.foundit.model.Notification
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[47,17] incompatible types: bad return type in lambda expression
+[ERROR]     inference variable T has incompatible bounds
+[ERROR]       equality constraints: com.foundit.model.Location
+[ERROR]       lower bounds: java.util.Map<java.lang.String,java.lang.String>
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[90,53] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable locationDetails of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[91,60] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable locationDetails of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[92,53] cannot find symbol
+[ERROR]   symbol:   method getType()
+[ERROR]   location: variable locationDetails of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[93,57] cannot find symbol
+[ERROR]   symbol:   method getBuilding()
+[ERROR]   location: variable locationDetails of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[94,54] cannot find symbol
+[ERROR]   symbol:   method getFloor()
+[ERROR]   location: variable locationDetails of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[95,55] cannot find symbol
+[ERROR]   symbol:   method getActive()
+[ERROR]   location: variable locationDetails of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/LocationController.java:[100,17] incompatible types: bad return type in lambda expression
+[ERROR]     inference variable T has incompatible bounds
+[ERROR]       equality constraints: com.foundit.model.Location
+[ERROR]       lower bounds: java.util.Map<java.lang.String,java.lang.String>
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[42,16] cannot find symbol
+[ERROR]   symbol:   method setName(java.lang.String)
+[ERROR]   location: variable library of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[43,16] cannot find symbol
+[ERROR]   symbol:   method setDescription(java.lang.String)
+[ERROR]   location: variable library of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[44,16] cannot find symbol
+[ERROR]   symbol:   method setType(com.foundit.model.Location.LocationType)
+[ERROR]   location: variable library of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[45,16] cannot find symbol
+[ERROR]   symbol:   method setBuilding(java.lang.String)
+[ERROR]   location: variable library of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[46,16] cannot find symbol
+[ERROR]   symbol:   method setFloor(java.lang.String)
+[ERROR]   location: variable library of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[47,16] cannot find symbol
+[ERROR]   symbol:   method setActive(boolean)
+[ERROR]   location: variable library of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[52,16] cannot find symbol
+[ERROR]   symbol:   method setName(java.lang.String)
+[ERROR]   location: variable canteen of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[53,16] cannot find symbol
+[ERROR]   symbol:   method setDescription(java.lang.String)
+[ERROR]   location: variable canteen of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[54,16] cannot find symbol
+[ERROR]   symbol:   method setType(com.foundit.model.Location.LocationType)
+[ERROR]   location: variable canteen of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[55,16] cannot find symbol
+[ERROR]   symbol:   method setBuilding(java.lang.String)
+[ERROR]   location: variable canteen of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[56,16] cannot find symbol
+[ERROR]   symbol:   method setFloor(java.lang.String)
+[ERROR]   location: variable canteen of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[57,16] cannot find symbol
+[ERROR]   symbol:   method setActive(boolean)
+[ERROR]   location: variable canteen of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[62,18] cannot find symbol
+[ERROR]   symbol:   method setName(java.lang.String)
+[ERROR]   location: variable classroom of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[63,18] cannot find symbol
+[ERROR]   symbol:   method setDescription(java.lang.String)
+[ERROR]   location: variable classroom of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[64,18] cannot find symbol
+[ERROR]   symbol:   method setType(com.foundit.model.Location.LocationType)
+[ERROR]   location: variable classroom of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[65,18] cannot find symbol
+[ERROR]   symbol:   method setBuilding(java.lang.String)
+[ERROR]   location: variable classroom of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[66,18] cannot find symbol
+[ERROR]   symbol:   method setFloor(java.lang.String)
+[ERROR]   location: variable classroom of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[67,18] cannot find symbol
+[ERROR]   symbol:   method setActive(boolean)
+[ERROR]   location: variable classroom of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[72,16] cannot find symbol
+[ERROR]   symbol:   method setName(java.lang.String)
+[ERROR]   location: variable parking of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[73,16] cannot find symbol
+[ERROR]   symbol:   method setDescription(java.lang.String)
+[ERROR]   location: variable parking of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[74,16] cannot find symbol
+[ERROR]   symbol:   method setType(com.foundit.model.Location.LocationType)
+[ERROR]   location: variable parking of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[75,16] cannot find symbol
+[ERROR]   symbol:   method setBuilding(java.lang.String)
+[ERROR]   location: variable parking of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[76,16] cannot find symbol
+[ERROR]   symbol:   method setFloor(java.lang.String)
+[ERROR]   location: variable parking of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[77,16] cannot find symbol
+[ERROR]   symbol:   method setActive(boolean)
+[ERROR]   location: variable parking of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[82,12] cannot find symbol
+[ERROR]   symbol:   method setName(java.lang.String)
+[ERROR]   location: variable lab of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[83,12] cannot find symbol
+[ERROR]   symbol:   method setDescription(java.lang.String)
+[ERROR]   location: variable lab of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[84,12] cannot find symbol
+[ERROR]   symbol:   method setType(com.foundit.model.Location.LocationType)
+[ERROR]   location: variable lab of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[85,12] cannot find symbol
+[ERROR]   symbol:   method setBuilding(java.lang.String)
+[ERROR]   location: variable lab of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[86,12] cannot find symbol
+[ERROR]   symbol:   method setFloor(java.lang.String)
+[ERROR]   location: variable lab of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[87,12] cannot find symbol
+[ERROR]   symbol:   method setActive(boolean)
+[ERROR]   location: variable lab of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[92,15] cannot find symbol
+[ERROR]   symbol:   method setName(java.lang.String)
+[ERROR]   location: variable sports of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[93,15] cannot find symbol
+[ERROR]   symbol:   method setDescription(java.lang.String)
+[ERROR]   location: variable sports of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[94,15] cannot find symbol
+[ERROR]   symbol:   method setType(com.foundit.model.Location.LocationType)
+[ERROR]   location: variable sports of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[95,15] cannot find symbol
+[ERROR]   symbol:   method setBuilding(java.lang.String)
+[ERROR]   location: variable sports of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[96,15] cannot find symbol
+[ERROR]   symbol:   method setFloor(java.lang.String)
+[ERROR]   location: variable sports of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[97,15] cannot find symbol
+[ERROR]   symbol:   method setActive(boolean)
+[ERROR]   location: variable sports of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[102,15] cannot find symbol
+[ERROR]   symbol:   method setName(java.lang.String)
+[ERROR]   location: variable hostel of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[103,15] cannot find symbol
+[ERROR]   symbol:   method setDescription(java.lang.String)
+[ERROR]   location: variable hostel of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[104,15] cannot find symbol
+[ERROR]   symbol:   method setType(com.foundit.model.Location.LocationType)
+[ERROR]   location: variable hostel of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[105,15] cannot find symbol
+[ERROR]   symbol:   method setBuilding(java.lang.String)
+[ERROR]   location: variable hostel of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[106,15] cannot find symbol
+[ERROR]   symbol:   method setFloor(java.lang.String)
+[ERROR]   location: variable hostel of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[107,15] cannot find symbol
+[ERROR]   symbol:   method setActive(boolean)
+[ERROR]   location: variable hostel of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[112,21] cannot find symbol
+[ERROR]   symbol:   method setName(java.lang.String)
+[ERROR]   location: variable securityDesk of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[113,21] cannot find symbol
+[ERROR]   symbol:   method setDescription(java.lang.String)
+[ERROR]   location: variable securityDesk of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[114,21] cannot find symbol
+[ERROR]   symbol:   method setType(com.foundit.model.Location.LocationType)
+[ERROR]   location: variable securityDesk of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[115,21] cannot find symbol
+[ERROR]   symbol:   method setBuilding(java.lang.String)
+[ERROR]   location: variable securityDesk of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[116,21] cannot find symbol
+[ERROR]   symbol:   method setFloor(java.lang.String)
+[ERROR]   location: variable securityDesk of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/config/DataInitializer.java:[117,21] cannot find symbol
+[ERROR]   symbol:   method setActive(boolean)
+[ERROR]   location: variable securityDesk of type com.foundit.model.Location
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/FoundItemService.java:[36,64] cannot find symbol
+[ERROR]   symbol:   method getFoundLocationId()
+[ERROR]   location: variable request of type com.foundit.dto.FoundItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/FoundItemService.java:[40,38] cannot find symbol
+[ERROR]   symbol:   method getItemName()
+[ERROR]   location: variable request of type com.foundit.dto.FoundItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/FoundItemService.java:[41,41] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable request of type com.foundit.dto.FoundItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/FoundItemService.java:[42,38] cannot find symbol
+[ERROR]   symbol:   method getImageUrl()
+[ERROR]   location: variable request of type com.foundit.dto.FoundItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/FoundItemService.java:[123,17] cannot find symbol
+[ERROR]   symbol:   method setId(java.lang.Long)
+[ERROR]   location: variable response of type com.foundit.dto.FoundItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/FoundItemService.java:[124,17] cannot find symbol
+[ERROR]   symbol:   method setItemName(java.lang.String)
+[ERROR]   location: variable response of type com.foundit.dto.FoundItemResponse
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

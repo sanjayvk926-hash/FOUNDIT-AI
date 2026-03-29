@@ -1,0 +1,139 @@
+﻿
+> build_final_v2.log:93
+:[ERROR] COMPILATION 
+ERROR : 
+  build_final_v2.log:94
+:[INFO] ---------------
+-----------------------
+-----------------------
+> build_final_v2.log:95
+:[ERROR] /C:/Users/Sanj
+ay/OneDrive/Documents/F
+OUNDIT AI/backend/found
+it-backend-spring/src/m
+ain/java/com/foundit/co
+ntroller/LocationContro
+ller.java:[47,17] 
+incompatible types: 
+bad return type in 
+lambda expression
+  
+build_final_v2.log:96: 
+   inference variable 
+T has incompatible 
+bounds
+  
+build_final_v2.log:97: 
+     equality 
+constraints: com.foundi
+t.model.Location
+> build_final_v2.log:99
+:[ERROR] /C:/Users/Sanj
+ay/OneDrive/Documents/F
+OUNDIT AI/backend/found
+it-backend-spring/src/m
+ain/java/com/foundit/co
+ntroller/LocationContro
+ller.java:[100,17] 
+incompatible types: 
+bad return type in 
+lambda expression
+  build_final_v2.log:10
+0:    inference 
+variable T has 
+incompatible bounds
+  build_final_v2.log:10
+1:      equality 
+constraints: com.foundi
+t.model.Location
+> build_final_v2.log:11
+1:[ERROR] Failed to 
+execute goal org.apache
+.maven.plugins:maven-co
+mpiler-plugin:3.11.0:co
+mpile 
+(default-compile) on 
+project 
+foundit-backend: 
+Compilation failure: 
+Compilation failure: 
+> build_final_v2.log:11
+2:[ERROR] /C:/Users/San
+jay/OneDrive/Documents/
+FOUNDIT AI/backend/foun
+dit-backend-spring/src/
+main/java/com/foundit/c
+ontroller/LocationContr
+oller.java:[47,17] 
+incompatible types: 
+bad return type in 
+lambda expression
+> build_final_v2.log:11
+3:[ERROR]     
+inference variable T 
+has incompatible bounds
+> build_final_v2.log:11
+4:[ERROR]       
+equality constraints: c
+om.foundit.model.Locati
+on
+> build_final_v2.log:11
+5:[ERROR]       lower 
+bounds: java.util.Map<j
+ava.lang.String,java.la
+ng.String>
+> build_final_v2.log:11
+6:[ERROR] /C:/Users/San
+jay/OneDrive/Documents/
+FOUNDIT AI/backend/foun
+dit-backend-spring/src/
+main/java/com/foundit/c
+ontroller/LocationContr
+oller.java:[100,17] 
+incompatible types: 
+bad return type in 
+lambda expression
+> build_final_v2.log:11
+7:[ERROR]     
+inference variable T 
+has incompatible bounds
+> build_final_v2.log:11
+8:[ERROR]       
+equality constraints: c
+om.foundit.model.Locati
+on
+> build_final_v2.log:11
+9:[ERROR]       lower 
+bounds: java.util.Map<j
+ava.lang.String,java.la
+ng.String>
+> build_final_v2.log:12
+0:[ERROR] -> [Help 1]
+> build_final_v2.log:12
+1:[ERROR] 
+> build_final_v2.log:12
+2:[ERROR] To see the 
+full stack trace of 
+the errors, re-run 
+Maven with the -e 
+switch.
+> build_final_v2.log:12
+3:[ERROR] Re-run Maven 
+using the -X switch to 
+enable full debug 
+logging.
+> build_final_v2.log:12
+4:[ERROR] 
+> build_final_v2.log:12
+5:[ERROR] For more 
+information about the 
+errors and possible 
+solutions, please read 
+the following articles:
+> build_final_v2.log:12
+6:[ERROR] [Help 1] http
+://cwiki.apache.org/con
+fluence/display/MAVEN/M
+ojoFailureException
+
+

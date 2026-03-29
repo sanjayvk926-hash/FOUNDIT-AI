@@ -1,0 +1,711 @@
+﻿mvn : WARNING: A 
+restricted method in 
+java.lang.System has 
+been called
+At line:1 char:235
++ ... 
+2_HOME\bin;$env:Path"; 
+mvn clean install 
+-DskipTests > 
+build.log 2>&1
++                      
+      ~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (WARNING: A re   
+ st...has been call    
+ed:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+WARNING: 
+java.lang.System::load 
+has been called by org.
+fusesource.jansi.intern
+al.JansiLoader in an 
+unnamed module (file:/c
+:/Users/Sanjay/OneDrive
+/Documents/FOUNDIT%20AI
+/backend/foundit-backen
+d-spring/maven_new/apac
+he-maven-3.9.6/lib/jans
+i-2.4.0.jar)
+WARNING: Use --enable-n
+ative-access=ALL-UNNAME
+D to avoid a warning 
+for callers in this 
+module
+WARNING: Restricted 
+methods will be 
+blocked in a future 
+release unless native 
+access is enabled
+
+WARNING: A terminally 
+deprecated method in 
+sun.misc.Unsafe has 
+been called
+WARNING: sun.misc.Unsaf
+e::objectFieldOffset 
+has been called by com.
+google.common.util.conc
+urrent.AbstractFuture$U
+nsafeAtomicHelper (file
+:/c:/Users/Sanjay/OneDr
+ive/Documents/FOUNDIT%2
+0AI/backend/foundit-bac
+kend-spring/maven_new/a
+pache-maven-3.9.6/lib/g
+uava-32.0.1-jre.jar)
+WARNING: Please 
+consider reporting 
+this to the 
+maintainers of class co
+m.google.common.util.co
+ncurrent.AbstractFuture
+$UnsafeAtomicHelper
+WARNING: sun.misc.Unsaf
+e::objectFieldOffset 
+will be removed in a 
+future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.foundit:foundit-backend >---------------------
+[INFO] Building FoundIt AI Backend 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ foundit-backend ---
+[INFO] Deleting C:\Users\Sanjay\OneDrive\Documents\FOUNDIT AI\backend\foundit-backend-spring\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ foundit-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ foundit-backend ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 50 source files with javac [debug release 17] to target\classes
+[INFO] Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[29,64] cannot find symbol
+  symbol:   method getLastSeenLocationId()
+  location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[33,37] cannot find symbol
+  symbol:   method getItemName()
+  location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[34,40] cannot find symbol
+  symbol:   method getDescription()
+  location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[35,67] cannot find symbol
+  symbol:   method getCategory()
+  location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[36,34] cannot find symbol
+  symbol:   method getColor()
+  location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[37,34] cannot find symbol
+  symbol:   method getBrand()
+  location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[38,17] cannot find symbol
+  symbol:   method setLastSeenLocation(com.foundit.model.Location)
+  location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[39,41] cannot find symbol
+  symbol:   method getLastSeenTime()
+  location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[40,17] cannot find symbol
+  symbol:   method setOwner(com.foundit.model.User)
+  location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[41,37] cannot find symbol
+  symbol:   method getImageUrl()
+  location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[42,17] cannot find symbol
+  symbol:   method setStatus(com.foundit.model.LostItem.ItemStatus)
+  location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[43,17] cannot find symbol
+  symbol:   method setReferenceId(java.lang.String)
+  location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[84,17] cannot find symbol
+  symbol:   method setStatus(com.foundit.model.LostItem.ItemStatus)
+  location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[90,28] cannot find symbol
+  symbol:   method getId()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[91,34] cannot find symbol
+  symbol:   method getItemName()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[92,37] cannot find symbol
+  symbol:   method getDescription()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[93,34] cannot find symbol
+  symbol:   method getCategory()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[94,31] cannot find symbol
+  symbol:   method getColor()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[95,31] cannot find symbol
+  symbol:   method getBrand()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[96,17] cannot find symbol
+  symbol:   method setLastSeenLocationName(item.getLa[...] null)
+  location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[96,46] cannot find symbol
+  symbol:   method getLastSeenLocation()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[97,46] cannot find symbol
+  symbol:   method getLastSeenLocation()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[98,38] cannot find symbol
+  symbol:   method getLastSeenTime()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[99,35] cannot find symbol
+  symbol:   method getOwner()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[100,36] cannot find symbol
+  symbol:   method getOwner()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[101,34] cannot find symbol
+  symbol:   method getImageUrl()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[102,32] cannot find symbol
+  symbol:   method getStatus()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[103,37] cannot find symbol
+  symbol:   method getReferenceId()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[104,36] cannot find symbol
+  symbol:   method getReportedAt()
+  location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[34,52] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[38,49] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[42,20] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[42,87] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[48,33] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[49,30] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[50,56] cannot find symbol
+  symbol:   method getPassword()
+  location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[51,33] cannot find symbol
+  symbol:   method getFullName()
+  location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[52,34] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[53,36] cannot find symbol
+  symbol:   method getPhoneNumber()
+  location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[56,20] cannot find symbol
+  symbol:   method getRole()
+  location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[58,59] cannot find symbol
+  symbol:   method getRole()
+  location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[60,21] cannot find symbol
+  symbol:   method setRole(com.foundit.model.User.UserRole)
+  location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[63,17] cannot find symbol
+  symbol:   method setRole(com.foundit.model.User.UserRole)
+  location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[66,13] cannot find symbol
+  symbol:   method setEnabled(boolean)
+  location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[71,64] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[71,87] cannot find symbol
+  symbol:   method getPassword()
+  location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[77,42] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[77,56] cannot find symbol
+  symbol:   method getUsername()
+  location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[77,76] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[78,36] cannot find symbol
+  symbol:   method getFullName()
+  location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[78,56] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[83,64] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.foundit.dto.LoginRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[83,87] cannot find symbol
+  symbol:   method getPassword()
+  location: variable request of type com.foundit.dto.LoginRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[89,58] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.foundit.dto.LoginRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[92,42] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[92,56] cannot find symbol
+  symbol:   method getUsername()
+  location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[92,76] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[93,36] cannot find symbol
+  symbol:   method getFullName()
+  location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[93,56] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/MatchingController.java:[33,73] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[76,55] cannot find symbol
+  symbol:   method getMatchScore()
+  location: variable m1 of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[76,75] cannot find symbol
+  symbol:   method getMatchScore()
+  location: variable m2 of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[79,47] cannot find symbol
+  symbol:   method getMatchScore()
+  location: variable bestMatch of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[83,26] cannot find symbol
+  symbol:   method setStatus(com.foundit.model.FoundItem.ItemStatus)
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[86,46] cannot find symbol
+  symbol:   method getLostItem()
+  location: variable bestMatch of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[87,25] cannot find symbol
+  symbol:   method setStatus(com.foundit.model.LostItem.ItemStatus)
+  location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[92,65] cannot find symbol
+  symbol:   method getReferenceId()
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[102,22] cannot find symbol
+  symbol:   method getImageFeatures()
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[102,61] cannot find symbol
+  symbol:   method getImageUrl()
+  location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[116,22] cannot find symbol
+  symbol:   method getDescription()
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[117,21] cannot find symbol
+  symbol:   method getDescription()
+  location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[131,22] cannot find symbol
+  symbol:   method getDetectedCategory()
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[131,64] cannot find symbol
+  symbol:   method getCategory()
+  location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[135,25] cannot find symbol
+  symbol:   method getDetectedCategory()
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[135,63] cannot find symbol
+  symbol:   method getCategory()
+  location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[139,38] cannot find symbol
+  symbol:   method getDetectedColor()
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[140,36] cannot find symbol
+  symbol:   method getColor()
+  location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[184,14] cannot find symbol
+  symbol:   method setFoundItem(com.foundit.model.FoundItem)
+  location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[185,14] cannot find symbol
+  symbol:   method setLostItem(com.foundit.model.LostItem)
+  location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[186,14] cannot find symbol
+  symbol:   method setMatchScore(double)
+  location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[187,14] cannot find symbol
+  symbol:   method setStatus(com.foundit.model.ItemMatch.MatchStatus)
+  location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[188,14] cannot find symbol
+  symbol:   method setOwnerNotified(boolean)
+  location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[191,14] cannot find symbol
+  symbol:   method setObjectTypeScore(double)
+  location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[192,14] cannot find symbol
+  symbol:   method setColorScore(double)
+  location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[194,22] cannot find symbol
+  symbol:   method getDescription()
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[195,21] cannot find symbol
+  symbol:   method getDescription()
+  location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[214,14] cannot find symbol
+  symbol:   method setStatus(com.foundit.model.ItemMatch.MatchStatus)
+  location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[218,14] cannot find symbol
+  symbol:   method getLostItem()
+  location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[219,38] cannot find symbol
+  symbol:   method getLostItem()
+  location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[221,14] cannot find symbol
+  symbol:   method getFoundItem()
+  location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[222,39] cannot find symbol
+  symbol:   method getFoundItem()
+  location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[42,47] cannot find symbol
+  symbol:   method getImageUrl()
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[43,45] cannot find symbol
+  symbol:   method getId()
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[60,30] cannot find symbol
+  symbol:   method setObjectType(java.lang.String)
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[65,30] cannot find symbol
+  symbol:   method setDetectedColor(java.lang.String)
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[70,34] cannot find symbol
+  symbol:   method setDetectedCategory(com.foundit.model.LostItem.ItemCategory)
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[79,30] cannot find symbol
+  symbol:   method setDetectedBrand(java.lang.String)
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[84,30] cannot find symbol
+  symbol:   method setImageFeatures(java.lang.String)
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[87,86] cannot find symbol
+  symbol:   method getReferenceId()
+  location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[32,27] cannot find symbol
+  symbol:   method getLostItem()
+  location: variable match of type com.foundit.model.ItemMatch
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.440 s
+[INFO] Finished at: 2026-03-18T16:22:24+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project foundit-backend: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[29,64] cannot find symbol
+[ERROR]   symbol:   method getLastSeenLocationId()
+[ERROR]   location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[33,37] cannot find symbol
+[ERROR]   symbol:   method getItemName()
+[ERROR]   location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[34,40] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[35,67] cannot find symbol
+[ERROR]   symbol:   method getCategory()
+[ERROR]   location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[36,34] cannot find symbol
+[ERROR]   symbol:   method getColor()
+[ERROR]   location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[37,34] cannot find symbol
+[ERROR]   symbol:   method getBrand()
+[ERROR]   location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[38,17] cannot find symbol
+[ERROR]   symbol:   method setLastSeenLocation(com.foundit.model.Location)
+[ERROR]   location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[39,41] cannot find symbol
+[ERROR]   symbol:   method getLastSeenTime()
+[ERROR]   location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[40,17] cannot find symbol
+[ERROR]   symbol:   method setOwner(com.foundit.model.User)
+[ERROR]   location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[41,37] cannot find symbol
+[ERROR]   symbol:   method getImageUrl()
+[ERROR]   location: variable request of type com.foundit.dto.LostItemRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[42,17] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.foundit.model.LostItem.ItemStatus)
+[ERROR]   location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[43,17] cannot find symbol
+[ERROR]   symbol:   method setReferenceId(java.lang.String)
+[ERROR]   location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[84,17] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.foundit.model.LostItem.ItemStatus)
+[ERROR]   location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[90,28] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[91,34] cannot find symbol
+[ERROR]   symbol:   method getItemName()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[92,37] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[93,34] cannot find symbol
+[ERROR]   symbol:   method getCategory()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[94,31] cannot find symbol
+[ERROR]   symbol:   method getColor()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[95,31] cannot find symbol
+[ERROR]   symbol:   method getBrand()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[96,17] cannot find symbol
+[ERROR]   symbol:   method setLastSeenLocationName(item.getLa[...] null)
+[ERROR]   location: variable response of type com.foundit.dto.LostItemResponse
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[96,46] cannot find symbol
+[ERROR]   symbol:   method getLastSeenLocation()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[97,46] cannot find symbol
+[ERROR]   symbol:   method getLastSeenLocation()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[98,38] cannot find symbol
+[ERROR]   symbol:   method getLastSeenTime()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[99,35] cannot find symbol
+[ERROR]   symbol:   method getOwner()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[100,36] cannot find symbol
+[ERROR]   symbol:   method getOwner()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[101,34] cannot find symbol
+[ERROR]   symbol:   method getImageUrl()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[102,32] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[103,37] cannot find symbol
+[ERROR]   symbol:   method getReferenceId()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/LostItemService.java:[104,36] cannot find symbol
+[ERROR]   symbol:   method getReportedAt()
+[ERROR]   location: variable item of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[34,52] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[38,49] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[42,20] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[42,87] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[48,33] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[49,30] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[50,56] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[51,33] cannot find symbol
+[ERROR]   symbol:   method getFullName()
+[ERROR]   location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[52,34] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[53,36] cannot find symbol
+[ERROR]   symbol:   method getPhoneNumber()
+[ERROR]   location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[56,20] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[58,59] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[60,21] cannot find symbol
+[ERROR]   symbol:   method setRole(com.foundit.model.User.UserRole)
+[ERROR]   location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[63,17] cannot find symbol
+[ERROR]   symbol:   method setRole(com.foundit.model.User.UserRole)
+[ERROR]   location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[66,13] cannot find symbol
+[ERROR]   symbol:   method setEnabled(boolean)
+[ERROR]   location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[71,64] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[71,87] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.foundit.dto.RegisterRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[77,42] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[77,56] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[77,76] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[78,36] cannot find symbol
+[ERROR]   symbol:   method getFullName()
+[ERROR]   location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[78,56] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[83,64] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.foundit.dto.LoginRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[83,87] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.foundit.dto.LoginRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[89,58] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.foundit.dto.LoginRequest
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[92,42] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[92,56] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[92,76] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[93,36] cannot find symbol
+[ERROR]   symbol:   method getFullName()
+[ERROR]   location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/AuthService.java:[93,56] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/controller/MatchingController.java:[33,73] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.foundit.model.User
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[76,55] cannot find symbol
+[ERROR]   symbol:   method getMatchScore()
+[ERROR]   location: variable m1 of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[76,75] cannot find symbol
+[ERROR]   symbol:   method getMatchScore()
+[ERROR]   location: variable m2 of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[79,47] cannot find symbol
+[ERROR]   symbol:   method getMatchScore()
+[ERROR]   location: variable bestMatch of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[83,26] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.foundit.model.FoundItem.ItemStatus)
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[86,46] cannot find symbol
+[ERROR]   symbol:   method getLostItem()
+[ERROR]   location: variable bestMatch of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[87,25] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.foundit.model.LostItem.ItemStatus)
+[ERROR]   location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[92,65] cannot find symbol
+[ERROR]   symbol:   method getReferenceId()
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[102,22] cannot find symbol
+[ERROR]   symbol:   method getImageFeatures()
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[102,61] cannot find symbol
+[ERROR]   symbol:   method getImageUrl()
+[ERROR]   location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[116,22] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[117,21] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[131,22] cannot find symbol
+[ERROR]   symbol:   method getDetectedCategory()
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[131,64] cannot find symbol
+[ERROR]   symbol:   method getCategory()
+[ERROR]   location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[135,25] cannot find symbol
+[ERROR]   symbol:   method getDetectedCategory()
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[135,63] cannot find symbol
+[ERROR]   symbol:   method getCategory()
+[ERROR]   location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[139,38] cannot find symbol
+[ERROR]   symbol:   method getDetectedColor()
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[140,36] cannot find symbol
+[ERROR]   symbol:   method getColor()
+[ERROR]   location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[184,14] cannot find symbol
+[ERROR]   symbol:   method setFoundItem(com.foundit.model.FoundItem)
+[ERROR]   location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[185,14] cannot find symbol
+[ERROR]   symbol:   method setLostItem(com.foundit.model.LostItem)
+[ERROR]   location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[186,14] cannot find symbol
+[ERROR]   symbol:   method setMatchScore(double)
+[ERROR]   location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[187,14] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.foundit.model.ItemMatch.MatchStatus)
+[ERROR]   location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[188,14] cannot find symbol
+[ERROR]   symbol:   method setOwnerNotified(boolean)
+[ERROR]   location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[191,14] cannot find symbol
+[ERROR]   symbol:   method setObjectTypeScore(double)
+[ERROR]   location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[192,14] cannot find symbol
+[ERROR]   symbol:   method setColorScore(double)
+[ERROR]   location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[194,22] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[195,21] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable lostItem of type com.foundit.model.LostItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[214,14] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.foundit.model.ItemMatch.MatchStatus)
+[ERROR]   location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[218,14] cannot find symbol
+[ERROR]   symbol:   method getLostItem()
+[ERROR]   location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[219,38] cannot find symbol
+[ERROR]   symbol:   method getLostItem()
+[ERROR]   location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[221,14] cannot find symbol
+[ERROR]   symbol:   method getFoundItem()
+[ERROR]   location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/MatchingService.java:[222,39] cannot find symbol
+[ERROR]   symbol:   method getFoundItem()
+[ERROR]   location: variable match of type com.foundit.model.ItemMatch
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[42,47] cannot find symbol
+[ERROR]   symbol:   method getImageUrl()
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[43,45] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[60,30] cannot find symbol
+[ERROR]   symbol:   method setObjectType(java.lang.String)
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[65,30] cannot find symbol
+[ERROR]   symbol:   method setDetectedColor(java.lang.String)
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[70,34] cannot find symbol
+[ERROR]   symbol:   method setDetectedCategory(com.foundit.model.LostItem.ItemCategory)
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[79,30] cannot find symbol
+[ERROR]   symbol:   method setDetectedBrand(java.lang.String)
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[84,30] cannot find symbol
+[ERROR]   symbol:   method setImageFeatures(java.lang.String)
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/ImageAnalysisService.java:[87,86] cannot find symbol
+[ERROR]   symbol:   method getReferenceId()
+[ERROR]   location: variable foundItem of type com.foundit.model.FoundItem
+[ERROR] /C:/Users/Sanjay/OneDrive/Documents/FOUNDIT AI/backend/foundit-backend-spring/src/main/java/com/foundit/service/NotificationService.java:[32,27] cannot find symbol
+[ERROR]   symbol:   method getLostItem()
+[ERROR]   location: variable match of type com.foundit.model.ItemMatch
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
