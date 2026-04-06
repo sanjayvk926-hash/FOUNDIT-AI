@@ -4,8 +4,11 @@ WORKDIR /app
 
 COPY . .
 
-RUN chmod +x mvnw || true
-RUN ./mvnw clean package -DskipTests || mvn clean package -DskipTests
+# Install Maven
+RUN apt-get update && apt-get install -y maven
+
+# Build project
+RUN mvn clean package -DskipTests
 
 EXPOSE 8080
 
