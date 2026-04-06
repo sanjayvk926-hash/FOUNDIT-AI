@@ -1,111 +1,91 @@
-import axios from 'axios';
+// For Vite projects
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
+// For Create React App
+// const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080/api';
 
-const api = axios.create({
-  baseURL: API_BASE_URL,
-  headers: {
-    'Content-Type': 'application/json',
-  },
-});
+export const api = {
+  // Auth endpoints
+  login: (credentials) => 
+    fetch(`${API_URL}/auth/login`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(credentials)
+    }),
 
-// Add a request interceptor to include the JWT token in headers
-api.interceptors.request.use(
-  (config) => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
-    }
-    return config;
-  },
-  (error) => {
-    return Promise.reject(error);
-  }
-);
+  register: (userData) => 
+    fetch(`${API_URL}/auth/register`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(userData)
+    }),
 
-export const authService = {
-  login: async (credentials: any) => {
-    const response = await api.post('/auth/login', credentials);
-    if (response.data.token) {
-      localStorage.setItem('token', response.data.token);
-      localStorage.setItem('user', JSON.stringify(response.data.user));
-    }
-    return response.data;
-  },
-  register: async (userData: any) => {
-    const response = await api.post('/auth/register', userData);
-    return response.data;
-  },
-  logout: () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-  },
-  getCurrentUser: () => {
-    const user = localStorage.getItem('user');
-    return user ? JSON.parse(user) : null;
-  },
-};
+  // Lost items endpoints
+  getLostItems: (token) => 
+    fetch(`${API_URL}/lost-items`, {
+      headers: { 'Authorization': `Bearer ${token}` }
+    }),
 
-export const lostItemService = {
-  reportLostItem: async (itemData: any) => {
-    const response = await api.post('/lost-items', itemData);
-    return response.data;
-  },
-  getMyLostItems: async () => {
-    const response = await api.get('/lost-items/my-items');
-    return response.data;
-  },
-  getLostItemById: async (id: number) => {
-    const response = await api.get(`/lost-items/${id}`);
-    return response.data;
-  },
-};
-
-export const foundItemService = {
-  reportFoundItem: async (formData: FormData) => {
-    const response = await api.post('/found-items', formData, {
+  createLostItem: (token, itemData) => 
+    fetch(`${API_URL}/lost-items`, {
+      method: 'POST',
       headers: {
-        'Content-Type': 'multipart/form-data',
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
       },
-    });
-    return response.data;
-  },
-  getAllFoundItems: async () => {
-    const response = await api.get('/found-items');
-    return response.data;
-  },
-  getMyFoundItems: async () => {
-    const response = await api.get('/found-items/my-items');
-    return response.data;
-  },
-  submitToSecurity: async (itemId: number, securityDeskId: number) => {
-    const response = await api.post(`/found-items/${itemId}/submit-to-security`, null, {
-      params: { securityDeskLocationId: securityDeskId },
-    });
-    return response.data;
-  },
-};
+      body: JSON.stringify(itemData)
+    }),
 
-export const matchService = {
-  getMatchesForUser: async () => {
-    const response = await api.get('/matches/my-matches');
-    return response.data;
-  },
-  confirmMatch: async (matchId: number) => {
-    const response = await api.post(`/matches/${matchId}/confirm`);
-    return response.data;
-  },
-};
+  // Found items endpoints
+  getFoundItems: (token) => 
+    fetch(`${API_URL}/found-items`, {
+      headers: { 'Authorization': `Bearer ${token}` }
+    }),
 
-export const analyticsService = {
-  getStats: async () => {
-    const response = await api.get('/analytics/stats');
-    return response.data;
+  createFoundItem: (token, itemData) => 
+    fetch(`${API_URL}/found-items`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(itemData)
+    }),
+
+  // File upload
+  uploadFile: (token, file) => {
+    const formData = new FormData();
+    formData.append('file', file);
+    
+    return fetch(`${API_URL}/files/upload`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${token}`
+      },
+      body: formData
+    });
   },
-  getHotspots: async () => {
-    const response = await api.get('/analytics/hotspots');
-    return response.data;
-  },
+
+  // Notifications
+  getNotifications: (token) => 
+    fetch(`${API_URL}/notifications`, {
+      headers: { 'Authorization': `Bearer ${token}` }
+    }),
+
+  getUnreadCount: (token) => 
+    fetch(`${API_URL}/notifications/unread/count`, {
+      headers: { 'Authorization': `Bearer ${token}` }
+    }),
+
+  // Locations
+  getLocations: () => 
+    fetch(`${API_URL}/locations/active`),
+
+  // Analytics (Admin)
+  getDashboard: (token) => 
+    fetch(`${API_URL}/analytics/dashboard`, {
+      headers: { 'Authorization': `Bearer ${token}` }
+    })
 };
 
 export default api;
